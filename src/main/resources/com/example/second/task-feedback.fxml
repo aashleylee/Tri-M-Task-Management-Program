@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="256.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.second.ReviewFeedback">
+   <children>
+      <Label layoutX="163.0" layoutY="14.0" text="Task Feedback">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="67.0" text="Feedback: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="completeButton" layoutX="295.0" layoutY="198.0" mnemonicParsing="false" onAction="#markTaskComplete" text="Send feedback" />
+      <Button layoutX="227.0" layoutY="198.0" mnemonicParsing="false" text="Cancel" />
+      <TextField layoutX="123.0" layoutY="67.0" prefHeight="122.0" prefWidth="280.0" />
+   </children>
+</AnchorPane>

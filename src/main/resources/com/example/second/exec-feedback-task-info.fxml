@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="367.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="151.0" layoutY="20.0" text="Task Information">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="68.0" text="Title: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="107.0" text="Description: ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="146.0" text="Category: ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="222.0" text="Due Date: ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="titleLabel" layoutX="84.0" layoutY="69.0" prefHeight="17.0" prefWidth="252.0" text="Label" />
+      <Label fx:id="descriptionLabel" layoutX="123.0" layoutY="108.0" prefHeight="17.0" prefWidth="227.0" text="Label" />
+      <Label fx:id="categoryLabel" layoutX="116.0" layoutY="147.0" text="Label" />
+      <Label fx:id="dueDateLabel" layoutX="118.0" layoutY="223.0" text="Label" />
+      <Button fx:id="completeButton" layoutX="279.0" layoutY="332.0" mnemonicParsing="false" onAction="#markTaskComplete" text="Mark as complete" />
+      <Label layoutX="39.0" layoutY="181.0" text="Assigned Members: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="assignedMembersLabel" alignment="TOP_LEFT" layoutX="169.0" layoutY="180.0" prefHeight="34.0" prefWidth="220.0" text="Label" />
+      <ImageView fitHeight="38.0" fitWidth="127.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tri-M_logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="giveFeedbackButton" layoutX="162.0" layoutY="332.0" mnemonicParsing="false" onAction="#giveFeedback" text="Give feedback" />
+      <Label layoutX="38.0" layoutY="254.0" text="Feedback: " />
+      <TextArea fx:id="feedbackTextArea" layoutX="110.0" layoutY="253.0" prefHeight="59.0" prefWidth="277.0" />
+   </children>
+</AnchorPane>
